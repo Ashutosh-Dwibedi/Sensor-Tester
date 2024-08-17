@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomePage">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="36dp"
+        android:id="@+id/home_cardView_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_background">
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.Material3.Button.TextButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Mutated_color_1"
+                android:text="@string/logout"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:cornerRadius="8dp"
+                android:textStyle="bold"
+                app:icon="@drawable/baseline_logout_24"
+                app:iconTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.6"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:id="@+id/logout_button"/>
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.Material3.Button.TextButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Mutated_color_1"
+                android:text="@string/delete_account"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:cornerRadius="8dp"
+                app:icon="@drawable/baseline_delete_24"
+                app:iconTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.85"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:id="@+id/delete_button"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/home_ShapeableImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/blank_contact_photo"
+        android:elevation="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_cardView_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:strokeColor="@color/black" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ashutosh"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="42sp"
+        android:layout_marginTop="12dp"
+        android:id="@+id/username_home_page"
+        app:layout_constraintTop_toBottomOf="@+id/home_ShapeableImageView"
+        app:layout_constraintStart_toStartOf="@id/home_ShapeableImageView"
+        app:layout_constraintEnd_toEndOf="@id/home_ShapeableImageView"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="25dp"
+        android:id="@+id/light_cardView"
+        android:layout_margin="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_cardView_1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Mutated_color_1">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/light_sensor_logo"
+                android:background="@null"
+                android:id="@+id/light_sensor"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:elevation="12dp"
+        android:id="@+id/proximity_cardView"
+        app:cardCornerRadius="25dp"
+        android:layout_margin="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_cardView_1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Mutated_color_1">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/proximity_sensor_logo"
+                android:background="@null"
+                android:id="@+id/proximity_sensor"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="25dp"
+        android:id="@+id/fingerprint_cardView"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/light_cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Mutated_color_1">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/biometric_fingerprint"
+                android:background="@null"
+                android:id="@+id/fingerprint_sensor"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:elevation="12dp"
+        app:cardCornerRadius="25dp"
+        android:id="@+id/gyro_cardView"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proximity_cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Mutated_color_1">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/gyro_sensor_logo_ss_small_transparent"
+                android:background="@null"
+                android:id="@+id/gyro_sensor"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/light_sensor"
+        android:textColor="@color/Mutated_color_1"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/light_cardView"
+        app:layout_constraintStart_toStartOf="@+id/light_cardView"
+        app:layout_constraintEnd_toEndOf="@id/light_cardView"
+        android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/proximity_sensor"
+        android:textColor="@color/Mutated_color_1"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/proximity_cardView"
+        app:layout_constraintStart_toStartOf="@+id/proximity_cardView"
+        app:layout_constraintEnd_toEndOf="@id/proximity_cardView"
+        android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/fingerprint_sensor"
+        android:textColor="@color/Mutated_color_1"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/fingerprint_cardView"
+        app:layout_constraintStart_toStartOf="@+id/fingerprint_cardView"
+        app:layout_constraintEnd_toEndOf="@id/fingerprint_cardView"
+        android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/gyroscope_sensor"
+        android:textColor="@color/Mutated_color_1"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/gyro_cardView"
+        app:layout_constraintStart_toStartOf="@+id/gyro_cardView"
+        app:layout_constraintEnd_toEndOf="@id/gyro_cardView"
+        android:layout_marginTop="8dp"/>
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

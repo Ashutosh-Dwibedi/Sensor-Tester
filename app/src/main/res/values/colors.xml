@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Mutated_color_1">#17b8e2</color>
+    <color name="Mutated_color_2">#1979B8</color>
+    <color name="Mutated_color_3">#c4e4ec</color>
+    <color name="Mutated_color_4">#dcecf4</color>
+    <color name="Dark_Yellow">#FFC107</color>
+</resources>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Sensor Tester</string>
+    <string name="welcome">Welcome</string>
+    <string name="login">Login</string>
+    <string name="signup">SignUp</string>
+    <string name="logo_for_login">Logo for login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="logo_for_signup">Logo for signUp</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="don_t_have_account">Don\'t have account?</string>
+    <string name="you_have_already_signed_up">You have already signed up!</string>
+    <string name="please_fill_all_data">Please fill all data!</string>
+    <string name="no_account_found">No account found!</string>
+    <string name="ashutosh">Ashutosh Dwibedi</string>
+    <string name="logout">Logout</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="light_sensor">Light</string>
+    <string name="proximity_sensor">Proximity</string>
+    <string name="fingerprint_sensor">Fingerprint</string>
+    <string name="gyroscope_sensor">Gyro</string>
+    <string name="press">PRESS</string>
+    <string name="dangerously_bright_light">Dangerously bright light!</string>
+    <string name="incredibly_bright">Incredibly bright</string>
+    <string name="normal">Normal</string>
+    <string name="light_dark">Light Dark</string>
+    <string name="dark">Dark</string>
+    <string name="safe_distance">Safe Distance!</string>
+    <string name="too_close">Too Close</string>
+    <string name="fingerprint_is_verified">Fingerprint is verified!</string>
+    <string name="home">Home</string>
+    <string name="go_back">Go back</string>
+</resources>
