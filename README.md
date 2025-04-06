@@ -4,9 +4,9 @@ This is an android project developed using Andoid Studio, Java to test the andro
 <br>
 <h2>Features</h2>
 <ul>
-  <li>Material UI desiign</li>
+  <li>Material UI design</li>
   <li>Used sharedPreferences for Authentication</li>
-  <li>Supports 4 types of device sensor testing (Gyro,Proximity,Light,Fingerprint)</li>
+  <li>Supports 4 types of device sensor testing (Gyro, Proximity, Light, Fingerprint)</li>
 </ul>
 <h2>Auther</h2>
 Ashutosh Dwibedi
